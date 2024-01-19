@@ -4,6 +4,9 @@ import install from "./plugins";
 import { setupRouter } from "./router";
 import { setupStore } from "./store";
 
+import { setupProdMockServer } from "../mock";
+setupProdMockServer();
+
 async function setupApp() {
   const app = createApp(App);
 

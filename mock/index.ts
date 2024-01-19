@@ -1,4 +1,4 @@
-import { createProdMockServer } from "vite-plugin-mock/es/createProdMockServer";
+import { createProdMockServer } from "@/utils/vite-plugin-mock";
 import auth from "./modules/auth";
 import user from "./modules/user";
 import role from "./modules/role";
