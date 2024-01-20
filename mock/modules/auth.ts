@@ -5,7 +5,7 @@ export default [
     url: "/mock/api/login",
     timeout: 1000,
     method: "post",
-    response: ({ body }) => {
+    response: ({ body }: any) => {
       return {
         code: 200,
         message: "ok",
@@ -19,7 +19,7 @@ export default [
     url: "/mock/api/userInfo",
     timeout: 200,
     method: "get",
-    response: (options) => {
+    response: (options: any) => {
       const role = options.headers.authorization.split("_")[0];
       const roleName = role === "admin" ? "系统管理员" : "普通用户";
       return {

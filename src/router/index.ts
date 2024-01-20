@@ -5,9 +5,14 @@ import {
   createWebHistory,
   RouteRecordRaw,
 } from "vue-router";
+import { LoginRoute, RootRoute, PathMatchRoute } from "./routes";
 import { createRouterGuard } from "./guard";
 /** 静态路由 */
-export const constantRoutes: RouteRecordRaw[] = [];
+export const constantRoutes: RouteRecordRaw[] = [
+  LoginRoute,
+  RootRoute,
+  PathMatchRoute,
+];
 
 const { VITE_ROUTE_HASH = "Y" } = import.meta.env;
 

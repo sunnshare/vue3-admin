@@ -12,8 +12,6 @@ const __APP_INFO__ = {
 
 export default defineConfig((configEnv: ConfigEnv): UserConfig => {
   const viteEnv = loadEnv(configEnv.mode, process.cwd()) as ImportMetaEnv;
-  console.log("viteEnv", viteEnv);
-
   return {
     base: viteEnv.VITE_BASE_URL,
     resolve: {
